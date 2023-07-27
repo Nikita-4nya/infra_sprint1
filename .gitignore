@@ -159,3 +159,5 @@ yarn-debug.log*
 yarn-error.log*
 static/
 media/
+static_backend/
+node_modules/
