@@ -1,5 +1,5 @@
 IP: 51.250.27.0;
-name_taski: https://4nya-taski.hopto.org;
+name_taski: https://4nya-taski.hopto.org;  #Перезапустил gunicorn
 name_kittygram: https://4nya-kittygram.hopto.org;
 login: admin;
 password: admin; 
