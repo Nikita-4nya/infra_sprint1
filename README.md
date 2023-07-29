@@ -56,23 +56,6 @@ ALLOWED_HOSTS=<IP вашего сервера> 127.0.0.1 localhost
 (venv) $ pip install gunicorn==20.1.0
 (venv) $ sudo nano /etc/systemd/system/gunicorn_kittygram.service
 ```
-В юните пропишите:
-
-```bash
-[Unit]
-Description=kittygram-gunicorn daemon 
-After=network.target 
-
-[Service]
-User=<Имя пользователя> 
-
-WorkingDirectory=<Путь к директории проекта>
-
-ExecStart=<директория-с-проектом>/<путь-до-gunicorn-в-виртуальном-окружении> --bind 0.0.0.0:8000 kyttygram_backend.wsgi
-
-[Install]
-WantedBy=multi-user.target
-```
 Запустите юнит:
 
 ```bash
