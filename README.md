@@ -129,3 +129,15 @@ server {
 ```bash
 sudo systemctl reload nginx
 ```
+9. В директории ```infra_sprint1/frontend/``` выполните команду:
+
+```bash
+npm run build
+```
+
+Скопируйте созданную папку в ```/var/www```:
+
+```bash
+sudo cp -r /infra_sprint1/frontend/build/. /var/www/kittygram/
+```
+10. Cоздайте директорию media в директории ```/var/www/kittygram/```
